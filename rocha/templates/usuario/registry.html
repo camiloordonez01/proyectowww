@@ -1,0 +1,11 @@
+{% extends 'components/sesion.html'%}
+{% load staticfiles %}
+{% block fila%} 
+	<img class="user" src="{% static 'img/users.png' %}">
+	<input class="first_name input_registry" type="text" name="first_name" id="first_name" placeholder="Nombres">
+	<input class="last_name input_registry" type="text" name="last_name" id="last_name" placeholder="Apellidos">
+	<input class="email_registry input_registry" type="text" name="email_registry" id="email_registry" placeholder="Correo Electronico">
+	<input class="username_registry input_registry" type="text" name="username_registry" id="username_registry" placeholder="Nombre de usuario">
+	<input class="password_registry input_registry" type="password" name="password_registry" id="password_registry" placeholder="Contraseña">
+	<a class="registry" id="registry" href="#">Registrarse</a>
+{% endblock%}
