@@ -1,3 +1,4 @@
+/* Login */
 .login{
 	background-color: #f2f2f2;
 	height: 100vh;
@@ -134,3 +135,75 @@
 	    font-size: 35px;
 	}
 }
+/* End Login */
+/* reset_password */
+.email_reset{
+	display: block;
+	margin: auto;
+	width: 60%;
+	height: 40px;
+	text-align: center;
+	margin: 20px auto;
+	border: solid 1px #DDDDDD;
+}
+.recuperar_reset{
+	display: block;
+	margin: auto;
+	width: 60%;
+	height: 35px;
+	background-color: #33297B;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 5px;
+}
+@media (max-width:992px) {
+	.email_reset{
+		height: 100px;
+	    background-size: 90px;
+	    font-size: 35px;
+	    text-align: center;
+	    width: 90%;
+	}
+	.recuperar_reset{
+	    font-size: 40px;
+	    width: 90%;
+	    height: 80px;
+	}
+}
+/* End reset_password */
+/* registry */
+.input_registry{
+	display: block;
+	margin: auto;
+	width: 60%;
+	height: 40px;
+	text-align: center;
+	margin: 20px auto;
+	border: solid 1px #DDDDDD;
+}
+.registry{
+	display: block;
+	margin: auto;
+	width: 60%;
+	height: 35px;
+	background-color: #33297B;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 5px;
+}
+@media (max-width:992px) {
+	.input_registry{
+		height: 100px;
+	    background-size: 90px;
+	    font-size: 35px;
+	    text-align: center;
+	    width: 90%;
+	}
+	.registry{
+	    font-size: 40px;
+	    width: 90%;
+	    height: 80px;
+	}
+}
+/* End registry */
+
