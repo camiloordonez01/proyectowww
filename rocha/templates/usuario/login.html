@@ -1,0 +1,31 @@
+% extends 'components/plantilla.html'%}
+{% load staticfiles %}
+{% block body%} 
+<div class="container-fluid login">
+	<div class="row fila">
+		<div class="col-lg-6 col-md-12 logo">
+			<img src="{% static 'img/logo.png' %}">
+		</div>
+		<div class="col-lg-6 col-md-12 formLogin">
+			<img class="user" src="{% static 'img/users.png' %}">
+			<input class="username" type="type" name="username" id="username" placeholder="Nombre de usuario">
+			<input class="password" type="password" name="password" id="password" placeholder="Contraseña">
+			<div class="filaRecordar">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6 recordar">
+							<input type="checkbox" name="recordar" id="recordar">
+							<label>Recordarme</label>
+						</div>
+						<div class="col-md-6 olvido">
+							<a href="#">Olvide la contraseña?</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="ingresar" id="ingresar" href="#">Ingresar</a>
+			<a class="registro" id="registro" href="#">Registrarme</a>
+		</div>
+	</div>
+</div>
+{% endblock%}
