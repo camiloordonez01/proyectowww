@@ -10,3 +10,6 @@ class reset_password(TemplateView):
 
 class registry(TemplateView):
 	template_name = 'usuario/registry.html'
+
+class panel(TemplateView):
+	template_name = 'usuario/panel.html'

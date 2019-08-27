@@ -1,0 +1,324 @@
+{% extends 'components/plantilla.html'%}
+{% load staticfiles %}
+{% block body%} 
+<div class="container-fluid panel">
+	<div class="row fila">
+		<div class="col-lg-10 col-md-12">
+			<h1 class="bienvenido">Bienvenido(a)</h1>
+		</div>
+		<div class="col-lg-2 col-md-12 logoPanel">
+			<img src="{% static 'img/user2.png' %}" width="80">
+			<h3>Mr. Usuario</h3>
+		</div>
+		<div class="col-lg-12 objetivos">
+			<div class="filaObjetivo">
+				<img src="{% static 'img/down.png' %}" width="30" onclick="cuadroObje(this,1)">
+				<span>Financiero</span>
+				<div class="iconosObj">
+					<img src="{% static 'img/add.png' %}" width="30" data-toggle="modal" data-target="#addObjetivo">
+					<img src="{% static 'img/edit.png' %}" width="30" data-toggle="modal" data-target="#editObjetivo">
+					<img src="{% static 'img/delete.png' %}" width="30" data-toggle="modal" data-target="#deleteObjetivo">
+					
+				</div>
+				<div class="scrollObjetivo" id="financiero">
+					<div class="desObjetivo">
+						<input type="checkbox" name="selectObj" id="selectObj">
+						<span>Descripción del objetivo .....</span>
+						<img src="{% static 'img/size.png' %}" width="30" data-toggle="modal" data-target="#viewObjetivo">
+					</div>
+					<div class="desObjetivo">
+						<input type="checkbox" name="selectObj" id="selectObj">
+						<span>Descripción del objetivo .....</span>
+						<img src="{% static 'img/size.png' %}" width="30" data-toggle="modal" data-target="#viewObjetivo">
+					</div>
+					<div class="desObjetivo">
+						<input type="checkbox" name="selectObj" id="selectObj">
+						<span>Descripción del objetivo .....</span>
+						<img src="{% static 'img/size.png' %}" width="30" data-toggle="modal" data-target="#viewObjetivo">
+					</div>
+					<div class="desObjetivo">
+						<input type="checkbox" name="selectObj" id="selectObj">
+						<span>Descripción del objetivo .....</span>
+						<img src="{% static 'img/size.png' %}" width="30" data-toggle="modal" data-target="#viewObjetivo">
+					</div>
+					<div class="desObjetivo">
+						<input type="checkbox" name="selectObj" id="selectObj">
+						<span>Descripción del objetivo .....</span>
+						<img src="{% static 'img/size.png' %}" width="30" data-toggle="modal" data-target="#viewObjetivo">
+					</div>
+					<div class="desObjetivo">
+						<input type="checkbox" name="selectObj" id="selectObj">
+						<span>Descripción del objetivo .....</span>
+						<img src="{% static 'img/size.png' %}" width="30" data-toggle="modal" data-target="#viewObjetivo">
+					</div>
+					<div class="desObjetivo">
+						<input type="checkbox" name="selectObj" id="selectObj">
+						<span>Descripción del objetivo .....</span>
+						<img src="{% static 'img/size.png' %}" width="30" data-toggle="modal" data-target="#viewObjetivo">
+					</div>
+				</div>
+			</div>
+			<div class="filaObjetivo">
+				<img src="{% static 'img/down.png' %}" width="30" onclick="cuadroObje(this,2)">
+				<span>Servicio al cliente</span>
+				<div class="scrollObjetivo" id="cliente">
+					<div class="desObjetivo">
+						<span>Descripción del objetivo .....</span>
+						<img src="{% static 'img/size.png' %}" width="30" data-toggle="modal" data-target="#viewObjetivo">
+					</div>
+					<div class="desObjetivo">
+						<span>Descripción del objetivo .....</span>
+						<img src="{% static 'img/size.png' %}" width="30" data-toggle="modal" data-target="#viewObjetivo">
+					</div>
+					<div class="desObjetivo">
+						<span>Descripción del objetivo .....</span>
+						<img src="{% static 'img/size.png' %}" width="30" data-toggle="modal" data-target="#viewObjetivo">
+					</div>
+					<div class="desObjetivo">
+						<span>Descripción del objetivo .....</span>
+						<img src="{% static 'img/size.png' %}" width="30" data-toggle="modal" data-target="#viewObjetivo">
+					</div>
+					<div class="desObjetivo">
+						<span>Descripción del objetivo .....</span>
+						<img src="{% static 'img/size.png' %}" width="30" data-toggle="modal" data-target="#viewObjetivo">
+					</div>
+					<div class="desObjetivo">
+						<span>Descripción del objetivo .....</span>
+						<img src="{% static 'img/size.png' %}" width="30" data-toggle="modal" data-target="#viewObjetivo">
+					</div>
+					<div class="desObjetivo">
+						<span>Descripción del objetivo .....</span>
+						<img src="{% static 'img/size.png' %}" width="30" data-toggle="modal" data-target="#viewObjetivo">
+					</div>
+				</div>
+			</div>
+			<div class="filaObjetivo">
+				<img src="{% static 'img/down.png' %}" width="30" onclick="cuadroObje(this,3)">
+				<span>Gestion humana</span>
+				<div class="scrollObjetivo" id="humana">
+					<div class="desObjetivo">
+						<span>Descripción del objetivo .....</span>
+						<img src="{% static 'img/size.png' %}" width="30" data-toggle="modal" data-target="#viewObjetivo">
+					</div>
+					<div class="desObjetivo">
+						<span>Descripción del objetivo .....</span>
+						<img src="{% static 'img/size.png' %}" width="30" data-toggle="modal" data-target="#viewObjetivo">
+					</div>
+					<div class="desObjetivo">
+						<span>Descripción del objetivo .....</span>
+						<img src="{% static 'img/size.png' %}" width="30" data-toggle="modal" data-target="#viewObjetivo">
+					</div>
+					<div class="desObjetivo">
+						<span>Descripción del objetivo .....</span>
+						<img src="{% static 'img/size.png' %}" width="30" data-toggle="modal" data-target="#viewObjetivo">
+					</div>
+					<div class="desObjetivo">
+						<span>Descripción del objetivo .....</span>
+						<img src="{% static 'img/size.png' %}" width="30" data-toggle="modal" data-target="#viewObjetivo">
+					</div>
+					<div class="desObjetivo">
+						<span>Descripción del objetivo .....</span>
+						<img src="{% static 'img/size.png' %}" width="30" data-toggle="modal" data-target="#viewObjetivo">
+					</div>
+					<div class="desObjetivo">
+						<span>Descripción del objetivo .....</span>
+						<img src="{% static 'img/size.png' %}" width="30" data-toggle="modal" data-target="#viewObjetivo">
+					</div>
+				</div>
+			</div>
+			<div class="filaObjetivo">
+				<img src="{% static 'img/down.png' %}" width="30" onclick="cuadroObje(this,4)">
+				<span>I + D</span>
+				<div class="scrollObjetivo" id="i_d">
+					<div class="desObjetivo">
+						<span>Descripción del objetivo .....</span>
+						<img src="{% static 'img/size.png' %}" width="30" data-toggle="modal" data-target="#viewObjetivo">
+					</div>
+					<div class="desObjetivo">
+						<span>Descripción del objetivo .....</span>
+						<img src="{% static 'img/size.png' %}" width="30" data-toggle="modal" data-target="#viewObjetivo">
+					</div>
+					<div class="desObjetivo">
+						<span>Descripción del objetivo .....</span>
+						<img src="{% static 'img/size.png' %}" width="30" data-toggle="modal" data-target="#viewObjetivo">
+					</div>
+					<div class="desObjetivo">
+						<span>Descripción del objetivo .....</span>
+						<img src="{% static 'img/size.png' %}" width="30" data-toggle="modal" data-target="#viewObjetivo">
+					</div>
+					<div class="desObjetivo">
+						<span>Descripción del objetivo .....</span>
+						<img src="{% static 'img/size.png' %}" width="30" data-toggle="modal" data-target="#viewObjetivo">
+					</div>
+					<div class="desObjetivo">
+						<span>Descripción del objetivo .....</span>
+						<img src="{% static 'img/size.png' %}" width="30" data-toggle="modal" data-target="#viewObjetivo">
+					</div>
+					<div class="desObjetivo">
+						<span>Descripción del objetivo .....</span>
+						<img src="{% static 'img/size.png' %}" width="30" data-toggle="modal" data-target="#viewObjetivo">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-12">
+			<button class="bsc">Modelo BSC</button>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="addObjetivo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+		        <h5 class="modal-title">Financiero</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+	      	</div>
+	      	<div class="modal-body">
+		        <div class="container">
+		        	<div class="row crearObjetivo">
+		        		<div class="col-lg-3">
+		        			<span>Objetivo</span>
+		        		</div>
+		        		<div class="col-lg-9">
+		        			<textarea placeholder="Escribe el objetivo"></textarea>
+		        		</div>
+		        	</div>
+		        	<div class="row crearObjetivo">
+		        		<div class="col-lg-3">
+		        			<span>Indicador</span>
+		        		</div>
+		        		<div class="col-lg-9">
+		        			<textarea placeholder="Escribe el indicador"></textarea>
+		        		</div>
+		        	</div>
+		        	<div class="row crearObjetivo">
+		        		<div class="col-lg-3">
+		        			<span>Meta</span>
+		        		</div>
+		        		<div class="col-lg-9">
+		        			<textarea placeholder="Escribe la meta"></textarea>
+		        		</div>
+		        	</div>
+		        	<div class="row crearObjetivo">
+		        		<div class="col-lg-3">
+		        			<span>Iniciativa</span>
+		        		</div>
+		        		<div class="col-lg-9">
+		        			<textarea placeholder="Escribe la iniciativa"></textarea>
+		        		</div>
+		        	</div>
+		        </div>
+		    </div>
+		    <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Salir</button>
+		        <button type="button" class="btn btn-primary">Crear</button>
+		    </div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="editObjetivo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+		        <h5 class="modal-title">Financiero</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+	      	</div>
+	      	<div class="modal-body">
+		        <div class="container">
+		        	<div class="row crearObjetivo">
+		        		<div class="col-lg-3">
+		        			<span>Objetivo</span>
+		        		</div>
+		        		<div class="col-lg-9">
+		        			<textarea placeholder="Escribe el objetivo"></textarea>
+		        		</div>
+		        	</div>
+		        	<div class="row crearObjetivo">
+		        		<div class="col-lg-3">
+		        			<span>Indicador</span>
+		        		</div>
+		        		<div class="col-lg-9">
+		        			<textarea placeholder="Escribe el indicador"></textarea>
+		        		</div>
+		        	</div>
+		        	<div class="row crearObjetivo">
+		        		<div class="col-lg-3">
+		        			<span>Meta</span>
+		        		</div>
+		        		<div class="col-lg-9">
+		        			<textarea placeholder="Escribe la meta"></textarea>
+		        		</div>
+		        	</div>
+		        	<div class="row crearObjetivo">
+		        		<div class="col-lg-3">
+		        			<span>Iniciativa</span>
+		        		</div>
+		        		<div class="col-lg-9">
+		        			<textarea placeholder="Escribe la iniciativa"></textarea>
+		        		</div>
+		        	</div>
+		        </div>
+		    </div>
+		    <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Salir</button>
+		        <button type="button" class="btn btn-primary editar">Editar</button>
+		    </div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="deleteObjetivo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+	      	<div class="modal-body delete">
+	      		<h4>¿Estas seguro de eliminar el objetivo?</h4>
+		        <button type="button" class="btn btn-primary seguro">Seguro</button>
+	      		<button type="button" class="btn btn-secondary cancelar" data-dismiss="modal">Cancelar</button>
+		    </div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="viewObjetivo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog view" role="document">
+		<div class="modal-content">
+	      	<div class="modal-body contentView">
+	      		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+	      		<div class="container">
+	      			<div class="row">
+	      				<div class="col-lg">
+	      					<h4>Objetivo</h4>
+	      					<div class="recuadro"></div>
+	      				</div>
+	      				<div class="col-lg-1 col-md-12 flecha">
+	      					<img src="{% static 'img/arrow.png' %}">
+	      				</div>
+	      				<div class="col-lg col-md-12">
+	      					<h4>Indicador</h4>
+	      					<div class="recuadro"></div>
+	      				</div>
+	      				<div class="col-lg-1 col-md-12 flecha">
+	      					<img src="{% static 'img/arrow.png' %}">
+	      				</div>
+	      				<div class="col-lg col-md-12">
+	      					<h4>Meta</h4>
+	      					<div class="recuadro"></div>
+	      				</div>
+	      				<div class="col-lg-1 col-md-12 flecha">
+	      					<img src="{% static 'img/arrow.png' %}">
+	      				</div>
+	      				<div class="col-lg col-md-12">
+	      					<h4>Iniciativa</h4>
+	      					<div class="recuadro"></div>
+	      				</div>
+	      			</div>
+	      		</div>
+		    </div>
+		</div>
+	</div>
+</div>
+{% endblock%}
