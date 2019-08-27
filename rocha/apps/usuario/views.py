@@ -13,3 +13,5 @@ class registry(TemplateView):
 
 class panel(TemplateView):
 	template_name = 'usuario/panel.html'
+class modelo(TemplateView):
+	template_name = 'usuario/modelo.html'

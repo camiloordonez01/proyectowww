@@ -263,8 +263,10 @@
 	margin: 20px;
     float: right;
     background-color: #fd7e14;
-    color: white;
+    color: white !important;
     font-size: 20px;
+    padding: 5px 10px;
+    text-decoration: none !important;
 }
 .crearObjetivo{
 	margin: 10px 0px;
@@ -349,6 +351,53 @@
 .contentView .col-md{
 	padding: 0px;
 }
+.area1{
+	background-color: #6ACB9A;
+	color: white;
+	padding-right: 0;
+    padding-left: 0;
+}
+.area2{
+	background-color: #FFCD28;
+	color: white;
+	padding-right: 0;
+    padding-left: 0;
+}
+.area3{
+	background-color: #01087C;
+	color: white;
+	padding-right: 0;
+    padding-left: 0;
+}
+.area4{
+	background-color: #5C73F2;
+	color: white;
+	padding-right: 0;
+    padding-left: 0;
+}
+.area1 .container,.area2 .container,.area3 .container,.area4 .container{
+	overflow-x: hidden;
+	overflow-y: scroll;
+	max-height: 200px;
+	padding-right: 40px;
+}
+.boxObjetivo{
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    margin-bottom: 5px;
+}
+.vision{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vision span{
+	    background-color: red;
+    color: white;
+    padding: 30px 50px;
+    font-size: 20px;
+}
 @media (max-width:992px) {
 	.bienvenido{
 		text-align: center;
@@ -432,6 +481,25 @@
 	    align-items: inherit;
 	    padding: 0px;
 	    text-align: right;
+	}
+	.vision{
+		display: none;
+	}
+	.area1 h5,.area2 h5,.area3 h5,.area4 h5{
+		font-size: 50px;
+	}
+	.area1 h6,.area2 h6,.area3 h6,.area4 h6{
+		font-size: 40px;
+	}
+	.boxObjetivo {
+	    height: 143px;
+	    width: 143px
+	}
+	.area1,.area2,.area3,.area4{
+	    margin-bottom: 20px;
+	}
+	.area1 .container, .area2 .container, .area3 .container, .area4 .container {
+	    max-height: 350px;
 	}
 }
 /* End panel */
